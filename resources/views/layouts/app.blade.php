@@ -12,6 +12,7 @@
     <body>
       @include('inc.navbar')
       <div class="container">
+        @include('inc.messages')
         @yield('content')
       </div>
       <script
@@ -19,5 +20,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>CKEDITOR.replace( 'article-ckeditor' );</script>
     </body>
 </html>
